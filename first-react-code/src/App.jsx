@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [x, setx] = useState(1);
   const [y, sety] = useState(0);
-  const [UN, setUN] = useState("");
+  const [UN, setUN] = useState({ userName: "", password: "" });
 
   return (
     <>
@@ -27,10 +27,22 @@ function App() {
         <h1>{y}</h1>
         <label htmlFor="UN">userName</label>
         <input type="text" id="UN" placeholder="aymene" />
-        <button type="submit" onClick={() => setUN(document.querySelector('#UN').value)}>
+        <label htmlFor="PW">password</label>
+        <input type="text" id="PW" placeholder="123....." />
+        <button
+          type="submit"
+          onClick={() =>
+            setUN({
+              userName: document.querySelector("#UN").value,
+              password: document.querySelector("#PW").value,
+            })
+          }
+        >
           login
         </button>
-        <h1>{UN}</h1>
+        <h1>
+          {UN.password} , {UN.userName}
+        </h1>
       </div>
     </>
   );
