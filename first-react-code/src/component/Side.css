@@ -1,0 +1,22 @@
+div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+button{
+    background-color: blue;
+    color: aliceblue;
+    border: 10px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(227, 227, 231);
+    color: rgb(226, 10, 10);
+    border: 10px solid rgb(83, 223, 18);
+}
+

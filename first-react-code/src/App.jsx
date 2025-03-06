@@ -1,43 +1,42 @@
-import { useState } from "react";
+import React from "react";
 import "./App.css";
 import First from "./component/First";
+import Head from "./component/Head";
+import Side from "./component/Side";
+import Midel from "./component/Midel";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [x, setx] = useState(1);
-  const [y, sety] = useState(0);
-  const [UN, setUN] = useState({ userName: "", password: "" });
-  const [afficher, setAfficher] = useState(false);
+  const PUB = [
+    {
+      id:1,
+      title: "Real madrid",
+      nameUser: "aymene meghni",
+      content: "real madrid is the best club in the world",
+    },
+    {
+      id:2,
+      title: "fcb",
+      nameUser: "yasser meghni",
+      content: "real madrid is the best club in the world",
+    },
+    {
+      id:3,
+      title: "atm",
+      nameUser: "barca fan",
+      content: "real madrid is the best club in the world",
+    },
+  ];
 
   return (
     <>
-      <div className="card">
-        <button
-          onClick={() => {
-            if (x === 1) {
-              setx(0);
-              setCount((count) => count + 1);
-            } else {
-              setCount((count) => count - 1);
-              setx(1);
-            }
-          }}
-        >
-          count is {count}
-        </button>
-        <input type="password" onChange={(e) => sety(e.target.value)} />
-        <h1>{y}</h1>
-        <button
-          onClick={() => {
-            setAfficher(!afficher);
-          }}
-        >
-          login
-        </button>
-        <First etat={afficher} />
-        <h1>
-          {UN.password} , {UN.userName}
-        </h1>
+      <div>
+        <Head />
+      </div>
+      <div>
+        <Side />
+      </div>
+      <div>
+        <Midel PUB={PUB} />
       </div>
     </>
   );
