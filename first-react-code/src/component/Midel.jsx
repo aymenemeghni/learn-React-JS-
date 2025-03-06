@@ -1,11 +1,19 @@
-import React from "react";
 import Post from "./Post";
+import "./Midel.css";
 
 const Midel = (props) => {
     const list = props.PUB;
-    const allPUB = list.map(function (e) {
-        <Post pub={e} />;
-    });
-    return <div>{allPUB}</div>;
+
+    return (
+        <div>
+        {list.map(function (e) {
+            return (
+            
+                <Post key={e.id} pub={e} />
+            
+            );
+        })}
+        </div>
+    );
 };
 export default Midel;

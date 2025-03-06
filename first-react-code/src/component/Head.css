@@ -1,34 +1,46 @@
-div{
+.HH{
+    padding: 5px;
+    position:static;
+    top: 0px;
     display: flex;
     flex-direction: row;
-    justify-content: center space-between;
+    justify-content: center space-around;
     position: static;
 }
-input{
+#search{
+    margin: 5px;
+    color: black;
     background-color: antiquewhite;
-    border: 10px solid black;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border: 5px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 
-button{
+#login , #signin{
+    margin: 5px;
     background-color: blue;
     color: aliceblue;
-    border: 10px solid black;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border: 5px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
-button:hover{
+#login:hover{
     background-color: rgb(227, 227, 231);
     color: rgb(226, 10, 10);
-    border: 10px solid rgb(83, 223, 18);
+    border: 5px solid rgb(83, 223, 18);
+}
+
+#signin:hover{
+    background-color: rgb(227, 227, 231);
+    color: rgb(226, 10, 10);
+    border: 5px solid rgb(83, 223, 18);
 }
 

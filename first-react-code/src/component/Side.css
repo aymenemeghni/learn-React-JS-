@@ -1,22 +1,25 @@
-div{
+.side{
+    padding: 10px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction:column;
+    align-items: center ;
+    justify-content: space-around;
 }
-button{
+.H{
+    margin: 10px;
     background-color: blue;
     color: aliceblue;
-    border: 10px solid black;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border: 5px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
-button:hover{
+.H:hover{
     background-color: rgb(227, 227, 231);
     color: rgb(226, 10, 10);
-    border: 10px solid rgb(83, 223, 18);
+    border: 5px solid rgb(83, 223, 18);
 }
 
