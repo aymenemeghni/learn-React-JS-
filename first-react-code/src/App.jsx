@@ -28,14 +28,14 @@ function App() {
 
   return (
     <div id="P">
-      <div id="midel">
-        <Midel PUB={PUB} />
-      </div>
       <div id="head">
         <Head />
       </div>
       <div id="side">
         <Side />
+      </div>
+      <div id="midel">
+        <Midel PUB={PUB} />
       </div>
     </div>
   );
