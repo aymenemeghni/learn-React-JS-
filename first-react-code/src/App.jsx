@@ -29,13 +29,14 @@ function App() {
 
   return (
     <>
-      <div>
+     <h1 style={{color :"red"}}>fffffffffff</h1>
+      <div id="head">
         <Head />
       </div>
-      <div>
+      <div id="side">
         <Side />
       </div>
-      <div>
+      <div id="midel">
         <Midel PUB={PUB} />
       </div>
     </>
